@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Jaunt Merchantise Overseas Pvt Ltd (JMO)</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="jmo-logo.png" alt="JMO Logo" width="70" height="70" class="d-inline-block align-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4">Your Global Export Partner</h1>
+            <p class="lead">Connecting India to the World</p>
+            <a href="#services" class="btn btn-primary btn-lg mt-4">Explore Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container py-5">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="service-icon fas fa-ship fa-3x"></i>
+                <h3>Shipping Solutions</h3>
+                <p>Reliable and efficient shipping to ensure your goods reach anywhere in the world.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="service-icon fas fa-globe fa-3x"></i>
+                <h3>Global Reach</h3>
+                <p>Extensive network of partners and destinations across all continents.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="service-icon fas fa-boxes fa-3x"></i>
+                <h3>Custom Packaging</h3>
+                <p>Specialized packaging to maintain the quality of your goods during transit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-dark py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>2024 Jaunt Merchantise Overseas Pvt Ltd (JMO) is a premier export company based in India with a
+                        mission to connect Indian products with global markets. With our expertise, quality assurance,
+                        and reliable service, we have earned the trust of clients worldwide.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="aboutus.jpg" alt="Company image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5 text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Your Message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4 bg-dark">
+        <p>&copy; 2024 Jaunt Merchantise Overseas Pvt Ltd (JMO). All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- EmailJS integration -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- Include EmailJS Library -->
+    <script>
+        (function () {
+            emailjs.init("Ntd2eXdyjI6nIAJWz"); // Ensure this user ID is correct
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm("#1", "#1", this) // Ensure these IDs are correct
+                .then(() => {
+                    alert("Message sent successfully!");
+                    this.reset();
+                }, (error) => {
+                    alert("Failed to send message. Please try again later.");
+                });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a; /* Dark navbar */
+}
+.navbar-brand img {
+    width: 40px; /* Adjust width as necessary */
+    height: auto; /* Keep aspect ratio */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #e0e0e0; /* Light color for nav links */
+}
+
+.navbar-dark .navbar-brand {
+    font-weight: bold;
+    color: royalblue !important; /* Royal Blue for brand */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('cargoship.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Keep text above the overlay */
+}
+
+.hero-section .btn {
+    background-color: royalblue; /* Royal Blue for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* No border for a clean look */
+}
+
+.hero-section .btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Services Section */
+.service-icon {
+    color: royalblue; /* Use royal blue for icons */
+}
+
+.service-section {
+    padding: 5rem 0; /* Top and bottom padding */
+}
+
+.service-section h2 {
+    margin-bottom: 2rem; /* Margin for heading */
+}
+
+/* About Section */
+#about {
+    background-color: #1a1a1a; /* Dark background for About section */
+    padding: 5rem 0; /* Padding for spacing */
+}
+
+#about p {
+    color: #d1d1d1; /* Light gray text */
+}
+
+/* Contact Section */
+.contact-section {
+    background: #1a1a1a; /* Dark background for Contact section */
+    padding: 5rem 0; /* Padding for spacing */
+}
+
+.contact-section h2 {
+    margin-bottom: 2rem; /* Margin for heading */
+}
+
+.contact-section .form-control {
+    background-color: #2a2a2a; /* Darker input background */
+    color: #e0e0e0; /* Light text color for inputs */
+    border: 1px solid royalblue; /* Royal Blue border for inputs */
+}
+
+.contact-section .form-control::placeholder {
+    color: #b0b0b0; /* Light gray placeholder */
+}
+
+.contact-section .btn {
+    background-color: royalblue; /* Royal Blue for buttons */
+    color: white; /* White text for buttons */
+    border: none; /* No border for a clean look */
+}
+
+.contact-section .btn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Footer */
+footer {
+    background: #222; /* Dark footer */
+    color: #e0e0e0; /* Light text color */
+    padding: 2rem 0; /* Padding for spacing */
+    text-align: center; /* Centered text */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
