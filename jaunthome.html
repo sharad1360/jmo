@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2024 Jaunt Merchantise Overseas Pvt Ltd (JMO)</title>
+    <title>JMO - Jaunt Merchandise Overseas Pvt Ltd </title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -25,6 +25,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -41,27 +42,50 @@
         </div>
     </section>
 
+    <!-- Products Section -->
+    <section id="products" class="container py-5">
+        <h2 class="text-center mb-5">Our Products</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="chilli.jpg" alt="Chilli" class="img-fluid rounded mb-3">
+                <h3>Chilli</h3>
+                <p>High-quality, fresh, and dried chilies sourced directly from the best farms.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="turmeric.jpg" alt="Turmeric" class="img-fluid rounded mb-3">
+                <h3>Turmeric</h3>
+                <p>Premium turmeric with vibrant color and strong aroma for diverse uses.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="fennel.jpg" alt="Fennel" class="img-fluid rounded mb-3">
+                <h3>Fennel</h3>
+                <p>Finest quality fennel seeds known for their rich flavor and medicinal value.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="container py-5">
         <h2 class="text-center mb-5">Our Services</h2>
         <div class="row text-center">
             <div class="col-md-4">
-                <i class="service-icon fas fa-ship fa-3x"></i>
+                <img src="shipping.jpg" alt="Shipping Solutions" class="img-fluid rounded mb-3">
                 <h3>Shipping Solutions</h3>
                 <p>Reliable and efficient shipping to ensure your goods reach anywhere in the world.</p>
             </div>
             <div class="col-md-4">
-                <i class="service-icon fas fa-globe fa-3x"></i>
+                <img src="global-reach.jpg" alt="Global Reach" class="img-fluid rounded mb-3">
                 <h3>Global Reach</h3>
                 <p>Extensive network of partners and destinations across all continents.</p>
             </div>
             <div class="col-md-4">
-                <i class="service-icon fas fa-boxes fa-3x"></i>
+                <img src="custom-packaging.jpg" alt="Custom Packaging" class="img-fluid rounded mb-3">
                 <h3>Custom Packaging</h3>
                 <p>Specialized packaging to maintain the quality of your goods during transit.</p>
             </div>
         </div>
     </section>
+
 
     <!-- About Section -->
     <section id="about" class="bg-dark py-5">
@@ -69,7 +93,7 @@
             <h2 class="text-center mb-5">About Us</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <p>2024 Jaunt Merchantise Overseas Pvt Ltd (JMO) is a premier export company based in India with a
+                    <p>2024 Jaunt Merchandise Overseas Pvt Ltd (JMO) is a premier export company based in India with a
                         mission to connect Indian products with global markets. With our expertise, quality assurance,
                         and reliable service, we have earned the trust of clients worldwide.</p>
                 </div>
@@ -106,10 +130,9 @@
         </div>
     </section>
 
-
     <!-- Footer -->
-    <footer class="text-center text-white py-4 bg-dark">
-        <p>&copy; 2024 Jaunt Merchantise Overseas Pvt Ltd (JMO). All rights reserved.</p>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 - 2025 JMO - Jaunt Merchandise Overseas Pvt Ltd. Established in 2024. All Rights Reserved.</p>
     </footer>
 
     <!-- Bootstrap JS and Dependencies -->
@@ -119,16 +142,16 @@
     <!-- Font Awesome for Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- EmailJS integration -->
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- Include EmailJS Library -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function () {
-            emailjs.init("Ntd2eXdyjI6nIAJWz"); // Ensure this user ID is correct
+            emailjs.init("Ntd2eXdyjI6nIAJWz");
         })();
 
         document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault();
 
-            emailjs.sendForm("#1", "#1", this) // Ensure these IDs are correct
+            emailjs.sendForm("#1", "#1", this)
                 .then(() => {
                     alert("Message sent successfully!");
                     this.reset();
