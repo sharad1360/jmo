@@ -13,8 +13,8 @@ const Dogratea = () => {
   };
 
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center py-10 space-x-8">
-      {/* Left Side: Main Image & Buttons */}
+    <section id="popular-product" className="flex flex-col md:flex-row items-center justify-center py-10 space-x-8">
+   {/* Left Side: Main Image & Buttons */}
       <div className="flex flex-col items-center">
         <h2 className="text-3xl font-bold mb-6">Popular Product</h2>
 
