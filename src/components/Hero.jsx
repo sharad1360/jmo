@@ -65,7 +65,7 @@ const Hero = () => {
             to="services" // Must match the section ID
             smooth={true}
             duration={500}
-            offset={-80} // Same offset as navbar
+            offset={-40} // Same offset as navbar
             className="px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             Our Services
@@ -74,7 +74,7 @@ const Hero = () => {
             to="contact" // Must match the section ID
             smooth={true}
             duration={500}
-            offset={-80} // Same offset as navbar
+            offset={-40} // Same offset as navbar
             className="px-8 py-3 border-2 border-blue-500 text-blue-400 font-semibold rounded-full text-lg hover:bg-blue-500/10 transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             Contact Us
@@ -98,7 +98,7 @@ const Hero = () => {
           to="about" // Next section to scroll to
           smooth={true}
           duration={500}
-          offset={-80}
+          offset={-40}
           className="block w-8 h-8 border-b-2 border-r-2 border-blue-400 rotate-45 cursor-pointer"
         />
       </motion.div>
