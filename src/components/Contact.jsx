@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { 
-  FaMapMarkerAlt, 
-  FaEnvelope, 
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
   FaPhoneAlt,
   FaClock,
   FaPaperPlane
@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -76,30 +76,31 @@ const Contact = () => {
           >
             <div className="bg-navy-800 rounded-xl p-8 h-full">
               <h3 className="text-2xl font-bold mb-6 text-blue-400">Contact Information</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <FaMapMarkerAlt className="text-blue-400 text-xl mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Headquarters</h4>
-                    <p className="text-gray-300">123 Export Street, Mumbai, Maharashtra, India 400001</p>
+                    <p className="text-gray-300">V.P.O Mangla, Mehla, Tehsil & District Chamba, Himachal Pradesh, India, 176310</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <FaEnvelope className="text-blue-400 text-xl mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Email Us</h4>
-                    <p className="text-gray-300">info@jmoexports.com</p>
-                    <p className="text-gray-300">sales@jmoexports.com</p>
+                    <p className="text-gray-300">jauntmerchandise@gmail.com</p>
+                    {/* <p className="text-gray-300">jauntmerchandise@gmail.com</p> */}
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-4">
                   <FaPhoneAlt className="text-blue-400 text-xl mt-1 flex-shrink-0" />
                   <div>
                     <h4 className="font-semibold">Call Us</h4>
                     <p className="text-gray-300">+91 78078 77421 (India)</p>
+                    <p className="text-gray-300">+91 82196 53695 (India)</p>
                     <p className="text-gray-300">+1 Coming Soon (USA)</p>
                   </div>
                 </div>
@@ -216,7 +217,7 @@ const Contact = () => {
                 </motion.div>
 
                 {submitStatus === 'success' && (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="mt-4 p-3 bg-green-900/50 border border-green-500 rounded-lg text-green-300 text-center"

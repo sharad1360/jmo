@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { 
-  FaMapMarkerAlt, 
-  FaEnvelope, 
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
   FaPhoneAlt,
   FaTwitter,
   FaFacebookF,
@@ -51,7 +51,7 @@ const Footer = () => {
   const socialIcons = [
     { icon: <FaTwitter className="text-xl" />, url: "https://twitter.com/jmoexports" },
     { icon: <FaFacebookF className="text-xl" />, url: "https://facebook.com/jmoexports" },
-    { icon: <FaLinkedinIn className="text-xl" />, url: "https://linkedin.com/company/jmoexports" },
+    { icon: <FaLinkedinIn className="text-xl" />, url: "https://www.linkedin.com/company/jaunt-merchandise-overses-pvt-ltd/" },
     { icon: <FaInstagram className="text-xl" />, url: "https://instagram.com/jmoexports" }
   ];
 
@@ -75,7 +75,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {socialIcons.map((social, index) => (
-                <a 
+                <a
                   key={index}
                   href={social.url}
                   target="_blank"
@@ -94,8 +94,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <a 
-                    href={link.path} 
+                  <a
+                    href={link.path}
                     className="hover:text-blue-400 transition-colors duration-300"
                   >
                     {link.name}
@@ -110,8 +110,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {productCategories.map((product) => (
                 <li key={product}>
-                  <a 
-                    href="#products" 
+                  <a
+                    href="#products"
                     className="hover:text-blue-400 transition-colors duration-300"
                   >
                     {product}
@@ -126,21 +126,22 @@ const Footer = () => {
             <address className="not-italic space-y-3">
               <p className="flex items-start">
                 <FaMapMarkerAlt className="text-blue-400 mr-3 mt-1 flex-shrink-0" />
-                <span>123 Export Street, Mumbai, Maharashtra, India 400001</span>
+                <span>V.P.O Mangla, Mehla, Tehsil & District Chamba, Himachal Pradesh, India, 176310</span>
               </p>
               <p className="flex items-start">
                 <FaEnvelope className="text-blue-400 mr-3 mt-1 flex-shrink-0" />
-                <span>info@jmoexports.com</span>
+                <span>jauntmerchandise@gmail.com</span>
               </p>
               <p className="flex items-start">
                 <FaPhoneAlt className="text-blue-400 mr-3 mt-1 flex-shrink-0" />
-                <span>+91 78078 77421</span>
+                <span>+91 78078 77421, +91 82196 53695</span>
               </p>
+
             </address>
           </motion.div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
